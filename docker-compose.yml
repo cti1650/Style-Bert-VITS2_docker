@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    command: bash -c ". venv/bin/activate && python server_editor.py --inbrowser --device cpu"
